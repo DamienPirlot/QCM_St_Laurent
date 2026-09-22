@@ -5,7 +5,7 @@ mode_evaluation("1");
 mode_sauvegarde("1");
 //code(" "," ");
 //code("essai","essai");
-titre("QCM : Comprendre l'électricité");
+titre("QCM : Aide supplémentaire pour comprendre les chapitre abordé en cours");
 introduction("Évaluez vos connaissances sur les différents thèmes.");
 introduction("N'ayez pas peur de l'échec : une fleur doit se planter pour pousser.");
 //introduction("Identifiant : \"\" | Mot de passe : \"\".");
@@ -35,7 +35,7 @@ chronometre("60","Le temps est écoulé !");
 // ====================================================================================
 // SECTION : La loi d'Ohm
 // ====================================================================================
-theme("Bac 1 : La Loi d'Ohm");
+theme(" 4eme : La Loi d'Ohm");
 
 debut("Questions sur la relation entre Tension, Courant et Résistance.");
 
@@ -56,10 +56,10 @@ rep("[x] 2 Ampères");
 rep("[ ] 200 Ampères");
 
 // ====================================================================================
-// SECTION : Le multimètre
+// SECTION : 4eme : Le multimètre
 // ====================================================================================
 
-theme("Bac 1 : Le Multimètre");
+theme("4eme : Le Multimètre");
 
 debut("Savoir utiliser les appareils de mesure.");
 quest("Multi01 : Que peut mesurer un multimètre en mode ohmmètre ?//a");
@@ -153,10 +153,10 @@ rep("[x] La borne COM");
 aj("images/Multi01.png");
 
 // ====================================================================================
-// SECTION : Le courant continu
+// SECTION : 4eme : Le courant continu
 // ====================================================================================
 
-theme("Bac 1 : Courant Continu (DC)");
+theme("4eme : Courant Continu (DC)");
 
 debut("Le courant fourni par les piles et batteries.");
 
@@ -179,7 +179,7 @@ rep("[ ] Un alternateur de centrale");
 // SECTION : L'électrotechnique 
 // ====================================================================================
 
-theme("Bac 1 / Bac 2 : L'electro - technique ");
+theme("4eme : L'electro - technique ");
 
 quest("electro00 : Reliez chaque grandeur à son unité ://2");
 rep("Tension : [Volt]");
