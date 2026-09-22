@@ -5,8 +5,8 @@ mode_evaluation("1");
 mode_sauvegarde("1");
 //code(" "," ");
 //code("essai","essai");
-titre("QCM : Aide supplémentaire pour comprendre les chapitre abordé en cours");
-introduction("Évaluez vos connaissances sur les différents thèmes.");
+titre("QCM : St Laurent ");
+introduction("Aide supplémentaire pour comprendre les chapitre abordé en cours. Évaluez vos connaissances sur les différents thèmes.");
 introduction("N'ayez pas peur de l'échec : une fleur doit se planter pour pousser.");
 //introduction("Identifiant : \"\" | Mot de passe : \"\".");
 
