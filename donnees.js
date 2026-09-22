@@ -3209,7 +3209,249 @@ rep("[x] Un registre");
 rep("[ ] Voyant liquide");
 
 quest("AgrFroid060 : A quoi sert essentiellement le registre ?://a");
-rep("[ ] Document paraphé");
-rep("[ ] Vérifié organisme");
-rep("[ ] Consigner entretien uniquement");
-rep("[x] Noter entretien + quantités de fluide");
+rep("[ ] A disposer d'un document qui est régulièrement paraphé");
+rep("[ ] A disposer d'un document dont l'exactitude des données est vérifiée par un organisme de contrôle");
+rep("[ ] A disposer d'un document qui sert exclusivement à consigner tous les travaux d'entretien");
+rep("[x] A disposer d'un document dans lequel on note tous les travaux d'entretien et les quantités de réfrigérant qui sont vidangées ou ajoutées");
+
+quest("AgrFroid061 : Selon la réglementation européenne, quelles sont les installations utilisant des réfrigérants fluorés à effet de serre qui doivent subir au minimum un contrôle périodique d'étanchéité ?://a");
+rep("[x] Uniquement celles dont la capacité nominale en réfrigérant est de 5 t équivalent CO2 ou plus (et 10 t éq. CO2 si hermétiques)");
+rep("[ ] Uniquement celles dont la capacité nominale en réfrigérant est de 15 tonnes équivalent CO2 ou plus");
+rep("[ ] Uniquement celles dont la capacité nominale en réfrigérant est de 10 tonnes équivalent CO2 ou plus");
+rep("[ ] Uniquement celles dont la capacité nominale en réfrigérant est de 20 tonnes équivalent CO2 ou plus");
+
+quest("AgrFroid062 : Une installation au R134a a été réparée suite à une fuite. Dans quel délai doit-on en contrôler à nouveau l'étanchéité ?://a");
+rep("[x] Dans un délai de 2 semaines");
+rep("[ ] Dans un délai de 6 mois");
+rep("[ ] Dans un délai de 12 mois");
+rep("[ ] Dans un délai de 1 mois");
+
+quest("AgrFroid063 : A partir de quelle capacité en réfrigérant les installations au HFC doivent-elles être dotées d'un système fixe de détection de fuites ?://a");
+rep("[x] > 50 t éq. CO2");
+rep("[ ] > 500 t éq. CO2");
+rep("[ ] > 300 kg de réfrigérant de type HFC");
+rep("[ ] > 50 kg réfrigérant");
+
+quest("AgrFroid064 : Le contrôle obligatoire des systèmes fixes de détection de fuites doit être réalisé :://a");
+rep("[ ] tous les 6 mois");
+rep("[ ] tous les 3 mois");
+rep("[x] tous les 12 mois");
+rep("[ ] tous les 24 mois");
+
+quest("AgrFroid065 : Lequel de ces agents a le moins d'influence sur le réchauffement global ?://a");
+rep("[ ] Le R134a");
+rep("[ ] Le R404A");
+rep("[x] Le R717");
+rep("[ ] Le R744");
+
+quest("AgrFroid066 : Les titulaires d'un certificat de catégorie II (complétez) :://a");
+rep("[ ] peuvent effectuer des réparations du circuit frigorifique des installations contenant 3 kg ou plus de HFC");
+rep("[x] peuvent effectuer des réparations du circuit frigorifique d'installations contenant moins de 3 kg de HFC (ou moins de 6 kg si le système est du type hermétique)");
+rep("[ ] peuvent récupérer le HFC d'installations qui en contiennent 3 kg ou plus");
+rep("[ ] peuvent exclusivement récupérer du HFC dans les installations qui en contiennent moins de 3 kg (ou moins de 6 kg si le système est du type hermétique)");
+
+quest("AgrFroid067 : La réglementation européenne distingue deux méthodes de contrôle de l'étanchéité des installations de réfrigération contenant des gaz à effet de serre fluorés. Lesquelles ?://a");
+rep("[ ] La méthode de Mollier et la méthode de mesure directe");
+rep("[x] Les méthodes de contrôle directe et indirecte");
+rep("[ ] La méthode de Mollier et la méthode de mesure indirecte");
+rep("[ ] La méthode de l'égalisation de pression interne et celle de l'égalisation de pression externe");
+
+quest("AgrFroid068 : Un technicien peut-t-il encore ajouter du HCFC dans des installations ?://a");
+rep("[ ] Oui, s'il dispose du certificat requis");
+rep("[x] Non, l'usage du HCFC est totalement interdit depuis le 01/01/2015");
+rep("[ ] Oui, mais uniquement dans des installations construites avant 2001");
+rep("[ ] Oui, mais uniquement du HCFC recyclé");
+
+quest("AgrFroid069 : Quand a lieu le contrôle obligatoire de l'étanchéité d'une installation aux HFC dont le système de détection des fuites est en état de marche et qui contient plus de 500 t éq. CO2 de réfrigérant ?://a");
+rep("[ ] Tous les 3 mois + si réparation d'une fuite: directement après cet acte et dans le mois suivant la réparation");
+rep("[x] Une fois par an + si réparation d'une fuite: directement après cet acte et dans le mois suivant la réparation");
+rep("[ ] Tous les 6 mois + si réparation d'une fuite: directement après cet acte et dans le mois suivant la réparation");
+rep("[ ] Une fois tous les 2 ans + si réparation d'une fuite: directement après cet acte et dans le mois suivant la réparation");
+
+quest("AgrFroid070 : Qui peut effectuer la mise en service d'un équipement frigorifique contenant 50 tonnes équivalent CO2 de réfrigérant ?://a");
+rep("[ ] Un technicien frigoriste certifié ou une personne travaillant sous sa responsabilité");
+rep("[x] Exclusivement un technicien frigoriste disposant du certificat adéquat");
+rep("[ ] Toute personne travaillant pour le compte de l'exploitant de l'équipement frigorifique");
+rep("[ ] Toute personne travaillant pour le compte d'une entreprise en technique frigorifique spécialisée/enregistrée");
+
+quest("AgrFroid071 : A combien de t éq. CO2 correspondent 30 kg de HFC 134a (GWP = 1430) ?://a");
+rep("[ ] 39,6 t éq. CO2");
+rep("[ ] 4,290 t éq. CO2");
+rep("[x] 42,9 t éq. CO2");
+rep("[ ] 30 t éq. CO2");
+
+quest("AgrFroid072 : Qui peut intervenir sur les parties d'un équipement frigorifique contenant 10 kg d'agent réfrigérant.://a");
+rep("[x] Un technicien frigoriste certifié de catégorie I ou une personne travaillant sous sa responsabilité");
+rep("[ ] Exclusivement un technicien disposant du certificat de catégorie I");
+rep("[ ] Exclusivement un technicien disposant du certificat de catégorie I ou II");
+rep("[ ] Toute personne travaillant pour le compte d'une entreprise en technique frigorifique spécialisée/enregistrée");
+
+quest("AgrFroid073 : A partir de quand l'exploitant est-il obligé d'installer un système de détection de fuites ?://a");
+rep("[ ] Si la puissance de l'équipement est supérieure à 300 kW frigorifique");
+rep("[x] Si l'équipement frigorifique contient plus de 500 t éq. CO2 d'agent réfrigérant fluoré");
+rep("[ ] Si la charge en agent réfrigérant fluoré est supérieure à 300 kg");
+rep("[ ] Si l'équipement frigorifique contient un agent réfrigérant fluoré dont le GWP est supérieur à 1500");
+
+quest("AgrFroid074 : Quelles sont les conditions minimales que doit remplir une entreprise en technique du froid pour pouvoir être agréée/enregistrée ?://a");
+rep("[ ] Le chef de cette entreprise doit être un technicien disposant du certificat requis");
+rep("[ ] Les travailleurs occupés par cette entreprise sont exclusivement des techniciens frigoristes disposant du certificat requis");
+rep("[x] \"Elle doit employer du personnel titulaire d'un certificat pour les activités pertinentes, en nombre suffisant pour faire face au volume d'activité escompté, et apporter la preuve que le personnel dispose de l'outillage et des procédures nécessaires.\"");
+rep("[ ] Son équipement doit correspondre au minimum à celui visé dans la règlementation régionale et son dirigeant doit disposer de l'accès à la profession de frigoriste");
+
+quest("AgrFroid075 : Le test de pression est réalisé par://a");
+rep("[ ] un monteur frigoriste");
+rep("[ ] un technicien agréé BA5");
+rep("[ ] une personne disposant de l'accès à la profession de frigoriste");
+rep("[x] un technicien frigoriste disposant du certificat adéquat");
+
+quest("AgrFroid076 : Le test d'étanchéité à l'aide d'un détecteur électronique d'une installation contenant 5 t éq. CO2 de HFC est réalisé par://a");
+rep("[x] un technicien frigoriste certifié de catégorie I, II ou IV");
+rep("[ ] un technicien frigoriste certifié de catégorie II");
+rep("[ ] un technicien frigoriste certifié de catégorie III");
+rep("[ ] un technicien en possession d'un diplôme de frigoriste validé par une entitée reconnue par les administrations régionales de l'environnement");
+
+quest("AgrFroid077 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 40 tonnes équivalent CO2 de gaz à effet de serre fluoré non équipé d'un système de détection de fuites ?://a");
+rep("[ ] 1 mois");
+rep("[ ] 3 mois");
+rep("[x] 6 mois");
+rep("[ ] 12 mois");
+
+quest("AgrFroid078 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 400 tonnes équivalent CO2 de HFC si aucun système de détection des fuites n'est installé?://a");
+rep("[ ] 1 mois");
+rep("[ ] 3 mois");
+rep("[x] 6 mois");
+rep("[ ] 12 mois");
+
+quest("AgrFroid079 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 250 t éq. CO2 de HFC si aucun système de détection des fuites n'est installé?://a");
+rep("[ ] 1 mois");
+rep("[ ] 3 mois");
+rep("[x] 6 mois");
+rep("[ ] 12 mois");
+
+quest("AgrFroid080 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 400 tonnes équivalent CO2 de HFC s'il y a un système de détection de fuites ?://a");
+rep("[ ] 1 mois");
+rep("[ ] 3 mois");
+rep("[ ] 6 mois");
+rep("[x] 12 mois");
+
+quest("AgrFroid081 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 2500 t éq. CO2 de HFC, tenant compte du fait qu'un système de détection de fuites a du être installé?://a");
+rep("[ ] 1 mois");
+rep("[ ] 3 mois");
+rep("[ ] 6 mois");
+rep("[x] 12 mois");
+
+quest("AgrFroid082 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 4200 tonnes équivalent CO2 de HFC, tenant compte du fait qu'un système de détection de fuites a du être installé?://a");
+rep("[ ] 1 mois");
+rep("[ ] 3 mois");
+rep("[ ] 6 mois");
+rep("[x] 12 mois");
+
+quest("AgrFroid083 : Les gaz à effet de serre fluorés visés à l'annexe II du Règlement 517/2014 :://a");
+rep("[ ] Sont exclusivement visés par une obligation de communication d'informations sur les quantités produites, importées et exportées");
+rep("[x] Sont soumis aux mêmes règles que les gaz visés à l'annexe I");
+rep("[ ] Doivent être manipulés par des techniciens certifiés de catégorie correspondante");
+rep("[ ] Doivent être manipulés par des techniciens certifiés de catégorie V, qui vise les interventions sur des gaz inflammables");
+
+quest("AgrFroid084 : Le réfrigérant d'une installation contenant de l'agent réfrigérant fluoré peut être vidangé par :://a");
+rep("[x] le personnel d'une entreprise agréée/enregistrée, sous la surveillance et la responsabilité d'un technicien disposant du certificat requis");
+rep("[ ] le personnel d'une entreprise disposant d'un certificat de catégorie IV");
+rep("[ ] un technicien disposant du certificat requis, travaillant dans une entreprise agréée/enregistrée");
+rep("[ ] une entreprise agréée pour la collecte et le transport de déchets dangereux");
+
+quest("AgrFroid085 : Qui est responsable de la conservation du registre/livret de bord d'un équipement frigorifique ?://a");
+rep("[x] L'exploitant de l'équipement, les entreprises en techique frigorifique devant en conserver une copie");
+rep("[ ] Le technicien frigoriste certifié");
+rep("[ ] Exclusivement l'entreprise en technique frigorifique");
+rep("[ ] Exclusivement l'exploitant d'équipements");
+
+quest("AgrFroid086 : Un technicien frigoriste a oublié sa bouteille d'azote alors qu'il doit effectuer un brasage fort pour réparer une installation. Peut-il quand même faire cette soudure ?://a");
+rep("[x] Non, ca ne répond pas aux règles de l'art");
+rep("[ ] Oui, mais il doit apposer un marquage spécifique sur cette soudure");
+rep("[ ] Oui, à condition de la réaliser avec 30 % d'argent");
+rep("[ ] Oui, si l'exploitant de l'autorisation lui en donne l'autorisation");
+
+quest("AgrFroid087 : Les titulaires d'un certificat de catégorie II (complétez) :://a");
+rep("[ ] peuvent exclusivement récupérer des HFC");
+rep("[ ] peuvent effectuer des réparations le circuit d'installations frigorifiques contenant plus de 10 kg de HFC");
+rep("[ ] peuvent récupérer du HFC dans les installations qui en contiennent plus de 6 kg (ou plus de 12 kg si le système est de type hermétique)");
+rep("[x] peuvent récupérer du HFC exclusivement dans les installations qui en contiennent moins de 3 kg (ou moins de 6 kg si le système est du type hermétique)");
+
+quest("AgrFroid088 : Un technicien frigoriste peut-il encore ajouter du HCFC?://a");
+rep("[ ] Oui, s'il est certifié");
+rep("[x] Non, l'utilisation du HCFC est totalement interdite depuis 2015");
+rep("[ ] Oui, mais uniquement dans des installations construites avant 2001");
+rep("[ ] Oui, mais uniquement du HCFC recyclé");
+
+quest("AgrFroid089 : Quand a lieu le contrôle obligatoire de l'étanchéité d'une installation HFC qui comprend un système de détection des fuites de plus de 500 tonnes équivalent CO2 de réfrigérant ?://a");
+rep("[ ] Tous les 3 mois (et en cas de réparation d'une fuite: directement après cet acte et dans le mois suivant la réparation)");
+rep("[x] Une fois par an (et en cas de réparation d'une fuite: directement après cet acte et dans le mois suivant la réparation)");
+rep("[ ] Tous les 6 mois (et en cas de réparation d'une fuite: directement après cet acte et dans le mois suivant la réparation)");
+rep("[ ] Une fois tous les 2 ans (et en cas de réparation d'une fuite: directement après cet acte et dans le mois suivant la réparation)");
+
+quest("AgrFroid090 : Qui peut effectuer le remplissage d'un équipement frigorifique contenant 50 tonnes équivalent CO2 ?://a");
+rep("[ ] Un technicien frigoriste certifié/qualifié ou une personne travaillant sous sa responsabilité");
+rep("[x] Exclusivement un technicien frigoriste disposant du certificat adéquat");
+rep("[ ] Toute personne travaillant pour le compte de l'exploitant de l'équipement frigorifique");
+rep("[ ] Toute personne travaillant pour le compte d'une entreprise en technique frigorifique agréée/enregistrée");
+
+quest("AgrFroid091 : Qui peut intervenir sur les parties d'un équipement contenant 20 tonnes équivalent CO2 de HFC ?://a");
+rep("[x] Un technicien frigoriste certifié de catégorie I ou toute personne travaillant sous sa responsabilité");
+rep("[ ] Exclusivement un technicien disposant du certificat de catégorie I");
+rep("[ ] Exclusivement un technicien disposant du certificat de catégorie I ou II");
+rep("[ ] Toute personne travaillant pour le compte d'une entreprise en technique frigorifique agréée/enregistrée");
+
+quest("AgrFroid092 : A partir de quand l'exploitant est-il obligé d'installer un système de détection de fuites ?://a");
+rep("[ ] Si la puissance de l'équipement est supérieure à 300 kw frigorifique");
+rep("[x] Si l'équipement frigorifique contient plus de 500 tonnes équivalent CO2 d'agent réfrigérant fluoré");
+rep("[ ] Si la charge en agent réfrigérant fluoré est supérieure à 50 tonne équivalent CO2");
+rep("[ ] Si l'équipement frigorifique contient un agent réfrigérant fluoré dont le GWP est supérieur à 1500");
+
+quest("AgrFroid093 : La période entre deux contrôles d'étanchéité d'équipements contenant des HFC non pourvus d'un système de détection de fuites :://a");
+rep("[x] est moins longue comparativement à celle d'un équipement contenant la même masse nominale de HFC équipé d'un système de détection de fuites");
+rep("[ ] est plus longue comparativement à celle d'un équipement contenant la même masse nominale de HFC équipé d'un système de détection de fuites");
+rep("[ ] est identique à celle d'un équipement contenant la même masse nominale de HFC pourvu d'un système de détection de fuites");
+rep("[ ] est d'une fois par an, quelle que soit la masse nominale d'agent réfrigérant");
+
+quest("AgrFroid094 : Quelles sont les conditions minimales que doit remplir une entreprise en technique du froid pour pouvoir être agréée ?://a");
+rep("[ ] Le chef de cette entreprise doit être un technicien disposant du certificat requis et son entreprise doit satisfaire aux prescriptions de la loi sur l'établissement");
+rep("[ ] Les travailleurs occupés par cette entreprise sont exclusivement des techniciens frigoristes disposant du certificat ou de l'accès à la profession requis");
+rep("[x] \"Elle doit employer du personnel titulaire d'un certificat pour les activités pertinentes, en nombre suffisant pour faire face au volume d'activité escompté, et apporter la preuve que le personnel dispose de l'outillage et des procédures nécessaires.\"");
+rep("[ ] Son équipement doit correspondre au minimum à celui visé dans la règlementation régionale et son dirigeant doit disposer de l'accès à la profession de frigoriste");
+
+quest("AgrFroid095 : Le test de pression est réalisé par://a");
+rep("[ ] un monteur frigoriste");
+rep("[ ] un technicien agréé BA5");
+rep("[ ] une personne disposant de l'accès à la profession de frigoriste");
+rep("[x] un technicien frigoriste disposant du certificat adéquat");
+
+quest("AgrFroid096 : Le test réglementaire d'étanchéité à l'aide d'un détecteur d'une installation contenant 70 tonnes équivalent CO2 de HFC est réalisé par://a");
+rep("[x] un technicien frigoriste certifié de catégorie I, II ou IV");
+rep("[ ] un technicien frigoriste certifié de catégorie I ou II");
+rep("[ ] un technicien frigoriste certifié de catégorie I ou IV");
+rep("[ ] un technicien non obligatoirement certifié, le certificat est uniquement obligatoire pour les contrôles nécessitant d'accéder au circuit");
+
+quest("AgrFroid097 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 40 tonnes équivalent CO2 d'agent réfrigérant fluoré non équipée d'un système de détection des fuites?://a");
+rep("[ ] 1 mois");
+rep("[ ] 3 mois");
+rep"[x] 6 mois");
+rep("[ ] 12 mois");
+
+quest("AgrFroid098 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 400 tonnes équivalent CO2 de HCF si aucun système de détection des fuites n'est installé?://a");
+rep("[ ] 1 mois");
+rep("[ ] 3 mois");
+rep("[x] 6 mois");
+rep("[ ] 12 mois");
+
+quest("AgrFroid099 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 400 tonnes équivalent CO2 de HFC si il y a un système de détection des fuites ?://a");
+rep("[ ] 1 mois");
+rep("[ ] 3 mois");
+rep("[ ] 6 mois");
+rep("[x] 12 mois");
+
+quest("AgrFroid100 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 800 tonnes équivalent CO2 de HFC, tenant compte du fait qu'un système de détection de fuites a dû être installé?://a");
+rep("[ ] 1 mois");
+rep("[ ] 3 mois");
+rep("[x] 6 mois");
+rep("[ ] 12 mois");
+
+
