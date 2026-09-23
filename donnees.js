@@ -3433,7 +3433,7 @@ rep("[ ] un technicien non obligatoirement certifié, le certificat est uniqueme
 quest("AgrFroid097 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 40 tonnes équivalent CO2 d'agent réfrigérant fluoré non équipée d'un système de détection des fuites?://a");
 rep("[ ] 1 mois");
 rep("[ ] 3 mois");
-rep"[x] 6 mois");
+rep("[x] 6 mois");
 rep("[ ] 12 mois");
 
 quest("AgrFroid098 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 400 tonnes équivalent CO2 de HCF si aucun système de détection des fuites n'est installé?://a");
@@ -3541,7 +3541,7 @@ rep("[ ] est d'une fois tous les 3 mois, quelle que soit la masse nominale d'age
 quest("AgrFroid114 : Quelles sont les conditions minimales que doit remplir une entreprise en technique du froid pour pouvoir être agréée ?://a");
 rep("[ ] Le chef de cette entreprise doit disposer du certificat requis");
 rep("[ ] Les travailleurs occupés par cette entreprise sont exclusivement des techniciens frigoristes disposant du certificat requis");
-rep("[x] "Elle doit employer du personnel titulaire d'un certificat pour les activités pertinentes, en nombre suffisant pour faire face au volume d'activité escompté, et apporter la preuve que le personnel dispose de l'outillage et des procédures nécessaires."");
+rep("[x] Elle doit employer du personnel titulaire d'un certificat pour les activités pertinentes, en nombre suffisant pour faire face au volume d'activité escompté, et apporter la preuve que le personnel dispose de l'outillage et des procédures nécessaires."");
 rep("[ ] Son équipement doit correspondre au minimum à celui visé dans la règlementation régionale et son dirigeant doit disposer de l'accès à la profession de frigoriste");
 
 quest("AgrFroid115 : Le test de pression est réalisé par://a");
@@ -3859,7 +3859,7 @@ rep("[ ] ce certificat doit être renouvelé chaque année");
 quest("AgrFroid166 : L'entreprise en technique frigorifique spécialisée/enregistrée qui effectue le stockage d'agents réfrigérants://a");
 rep("[ ] peut transporter ses bouteilles remplies à maximum 80% de sa contenance dans un parc à container");
 rep("[ ] peut remettre sur le marché des bouteilles de fluides récupéré");
-rep("[ ] doit s'enregistrer sur le site "http://ec.europa.eu/clima/policies/f-gas/" de la Commission européenne");
+rep("[ ] doit s'enregistrer sur le site http://ec.europa.eu/clima/policies/f-gas/ de la Commission européenne");
 rep("[x] doit tenir à jour un registre des déchets stockés");
 
 quest("AgrFroid167 : Vis-à-vis de la protection de l'environnement, quelle doit être la ligne de conduite d'un technicien frigoriste certifié vis-à-vis de l'agent réfrigérant fluoré://a");
@@ -4975,7 +4975,7 @@ rep("[x] La quantité de fluide de l'installation");
 quest("AgrFroid349 : Une conduite de liquide de diamètre trop faible provoque:://a");
 rep("[ ] un sous-refroidissement trop important");
 rep("[ ] une trop faible chute de pression dans le détendeur");
-rep("[x] une prédétente ou "flash-gaz" suite à une perte de charge trop importante dans la conduite");
+rep("[x] une prédétente ou flash-gaz suite à une perte de charge trop importante dans la conduite");
 rep("[ ] une trop importante chute de pression dans le détendeur");
 
 quest("AgrFroid350 : Qu'est-ce que le flash-gaz ?://a");
@@ -5596,7 +5596,7 @@ rep("[ ] Un fluide azéotrope");
 rep("[ ] Un absorbant");
 rep("[ ] Toutes les réponses précédentes sont mauvaises");
 
-quest("AgrFroid452 : Quand un mélange zéotrope ("non-azéotrope") s'évapore à pression constante, on note :://a");
+quest("AgrFroid452 : Quand un mélange zéotrope (non-azéotrope) s'évapore à pression constante, on note :://a");
 rep("[x] un glissement de température");
 rep("[ ] l'absence de glissement de température");
 rep("[ ] une température stable");
@@ -5617,7 +5617,7 @@ rep("[ ] Pour pouvoir répondre à cette question, il faut connaître la hauteur
 quest("AgrFroid455 : Qu'indiquent les bulles de gaz dans le voyant liquide d'une installation de réfrigération en service normal ?://a");
 rep("[ ] Un manque de réfrigérant à coup sûr");
 rep("[ ] Un sous-refroidissement");
-rep("[x] La présence d'un flash-gaz ("pré-détente")");
+rep("[x] La présence d'un flash-gaz (pré-détente)");
 rep("[ ] Une pression de condensation trop basse");
 
 quest("AgrFroid456 : Il est conseillé de placer le réservoir de liquide [complétez] que le condenseur.://a");
@@ -5987,7 +5987,7 @@ rep("[ ] Lorsqu'on utilise un condenseur refroidi par eau");
 rep("[ ] Lorsque le liquide doit atteindre une hauteur supérieure à +/- 5 m");
 
 quest("AgrFroid516 : Qu'est-ce que le COP théorique ?://a");
-rep("[x] "le rapport entre la puissance calorifique dégagée au condenseur et la puissance absorbée par le compresseur"");
+rep("[x] le rapport entre la puissance calorifique dégagée au condenseur et la puissance absorbée par le compresseur");
 rep("[ ] Le rapport entre la pression d'évaporation et la pression de condensation");
 rep("[ ] Le rapport entre la pression d'aspiration saturée et la pression d'évaporation");
 rep("[ ] C'est un acronyme désignant une soupape réglant une pression de service constante (Constant Operating Pressure)");
