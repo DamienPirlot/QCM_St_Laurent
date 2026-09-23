@@ -4322,7 +4322,7 @@ rep("[ ] ce certificat doit être renouvelé chaque année");
 quest("AgrFroid212 : L'entreprise en technique frigorifique spécialisée/enregistrée qui effectue le stockage d'agents réfrigérants://a");
 rep("[ ] peut transporter ses bouteilles remplies à maximum 80% de sa contenance dans un parc à container");
 rep("[ ] peut remettre sur le marché des bouteilles de fluides récupéré");
-rep("[ ] doit s'enregistrer sur le site "http://ec.europa.eu/clima/policies/f-gas/" de la Commission européenne");
+rep("[ ] doit s'enregistrer sur le site http://ec.europa.eu/clima/policies/f-gas/ de la Commission européenne");
 rep("[x] doit tenir à jour un registre des déchets stockés");
 
 quest("AgrFroid213 : Vis-à-vis de la protection de l'environnement, quelle doit être la ligne de conduite d'un technicien frigoriste certifié vis-à-vis de l'agent réfrigérant fluoré://a");
