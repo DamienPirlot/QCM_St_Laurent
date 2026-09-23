@@ -175,199 +175,388 @@ rep("[ ] Une prise de courant murale");
 rep("[x] Une batterie de voiture");
 rep("[ ] Un alternateur de centrale");
 
-// ====================================================================================
-// SECTION : L'électrotechnique 
-// ====================================================================================
 
-theme("4eme : L'electro - technique ");
+// ====================================================================================
+// SECTION : Arduino - Bases de la programmation
+// ====================================================================================
+theme("Arduino : Bases de la programmation");
 
-quest("electro00 : Reliez chaque grandeur à son unité ://2");
+debut("Découvrez les notions fondamentales de la programmation Arduino : variables, boucles et structure d'un programme.");
+
+quest("ARD01 : Qu'est-ce qu'une variable en programmation ?//a");
+rep("[ ] Une fonction qui exécute une action");
+rep("[x] Un espace mémoire nommé qui stocke une valeur");
+rep("[ ] Un composant électronique de la carte Arduino");
+rep("[ ] Un type de boucle");
+
+quest("ARD02 : Quel type de variable utilise-t-on pour stocker un nombre entier (ex : 13) ?//a");
+rep("[ ] float");
+rep("[x] int");
+rep("[ ] char");
+rep("[ ] String");
+
+quest("ARD03 : Quel type de variable ne peut prendre que deux états (vrai ou faux) ?//a");
+rep("[ ] int");
+rep("[x] boolean");
+rep("[ ] float");
+rep("[ ] byte");
+
+quest("ARD04 : Dans l'instruction \"int led = 13;\", que représente le 13 ?//a");
+rep("[ ] Le type de la variable");
+rep("[ ] Le nom de la variable");
+rep("[x] La valeur assignée à la variable");
+rep("[ ] Un commentaire");
+
+quest("ARD05 : Une variable déclarée en dehors de toute fonction (setup ou loop) est dite ://a");
+rep("[x] globale, elle est accessible partout dans le programme");
+rep("[ ] locale, elle n'existe que dans setup()");
+rep("[ ] temporaire, elle est supprimée après 1 seconde");
+rep("[ ] constante, elle ne peut jamais changer");
+
+quest("ARD06 : À quoi sert une boucle \"for\" ?//a");
+rep("[ ] À tester une condition une seule fois");
+rep("[x] À répéter un bloc d'instructions un nombre défini de fois");
+rep("[ ] À déclarer une variable");
+rep("[ ] À arrêter le programme");
+
+quest("ARD07 : Dans \"for (int i = 0; i < 10; i++)\", combien de fois le bloc sera-t-il exécuté ?//a");
+rep("[ ] 9 fois");
+rep("[x] 10 fois");
+rep("[ ] 11 fois");
+rep("[ ] Une seule fois");
+
+quest("ARD08 : Dans une boucle for, que fait généralement l'instruction \"i++\" ?//a");
+rep("[ ] Elle remet i à zéro");
+rep("[x] Elle incrémente i de 1 à chaque tour de boucle");
+rep("[ ] Elle divise i par 2");
+rep("[ ] Elle arrête la boucle immédiatement");
+
+quest("ARD09 : À quoi sert une structure \"if\" ?//a");
+rep("[ ] À répéter une action plusieurs fois");
+rep("[x] À exécuter un bloc d'instructions seulement si une condition est vraie");
+rep("[ ] À déclarer une variable globale");
+rep("[ ] À définir la vitesse du programme");
+
+quest("ARD10 : En programmation Arduino, quel symbole permet de tester une égalité dans un \"if\" ?//a");
+rep("[ ] =");
+rep("[x] ==");
+rep("[ ] ===");
+rep("[ ] !=");
+
+quest("ARD11 : Que permet d'ajouter le mot-clé \"else\" après un \"if\" ?//a");
+rep("[x] Un bloc d'instructions exécuté quand la condition du if est fausse");
+rep("[ ] Une nouvelle variable");
+rep("[ ] Une boucle infinie");
+rep("[ ] Un commentaire");
+
+quest("ARD12 : À quoi sert la fonction \"void setup()\" dans un programme Arduino ?//a");
+rep("[ ] Elle contient les instructions qui se répètent en boucle");
+rep("[x] Elle contient les instructions exécutées une seule fois au démarrage");
+rep("[ ] Elle sert à éteindre la carte");
+rep("[ ] Elle mesure une tension");
+
+quest("ARD13 : Combien de fois le contenu de \"void setup()\" est-il exécuté après la mise sous tension de la carte ?//a");
+rep("[x] Une seule fois");
+rep("[ ] En continu, tant que la carte est alimentée");
+rep("[ ] 10 fois");
+rep("[ ] Jamais");
+
+quest("ARD14 : À quoi sert la fonction \"void loop()\" ?//a");
+rep("[ ] Elle configure les broches une seule fois");
+rep("[x] Elle contient les instructions qui se répètent indéfiniment");
+rep("[ ] Elle déclare les variables globales");
+rep("[ ] Elle importe une bibliothèque");
+
+quest("ARD15 : Que se passe-t-il si on oublie d'écrire \"void loop()\" dans un programme Arduino ?//a");
+rep("[x] Le programme ne compile pas, une erreur est générée");
+rep("[ ] Le programme fonctionne normalement");
+rep("[ ] Seul setup() sera ignoré");
+rep("[ ] La carte Arduino s'éteint automatiquement");
+
+quest("ARD16 : Quelle fonction permet de définir une broche comme entrée ou comme sortie ?//a");
+rep("[ ] digitalWrite()");
+rep("[x] pinMode()");
+rep("[ ] analogRead()");
+rep("[ ] Serial.begin()");
+
+quest("ARD17 : À quoi sert la fonction \"digitalWrite()\" ?//a");
+rep("[ ] À lire une tension analogique");
+rep("[x] À mettre une broche numérique à l'état HAUT (5V) ou BAS (0V)");
+rep("[ ] À définir la vitesse de communication série");
+rep("[ ] À déclarer une variable");
+
+quest("ARD18 : À quoi sert la fonction \"digitalRead()\" ?//a");
+rep("[x] À lire l'état (HAUT ou BAS) d'une broche numérique");
+rep("[ ] À écrire une valeur analogique sur une broche");
+rep("[ ] À allumer une LED directement");
+rep("[ ] À créer une boucle for");
+
+quest("ARD19 : Entre quelles valeurs se situe le résultat renvoyé par \"analogRead()\" sur un Arduino Uno ?//a");
+rep("[ ] Entre 0 et 5");
+rep("[ ] Entre 0 et 255");
+rep("[x] Entre 0 et 1023");
+rep("[ ] Entre -5 et +5");
+
+quest("ARD20 : Entre quelles valeurs se situe le paramètre utilisé par \"analogWrite()\" (signal PWM) ?//a");
+rep("[ ] Entre 0 et 1023");
+rep("[x] Entre 0 et 255");
+rep("[ ] Entre 0 et 5");
+rep("[ ] Entre 0 et 100");
+
+quest("ARD21 : À quoi sert la fonction \"delay(1000)\" ?//a");
+rep("[ ] Elle répète une instruction 1000 fois");
+rep("[x] Elle met le programme en pause pendant 1000 millisecondes (1 seconde)");
+rep("[ ] Elle règle la vitesse de communication série à 1000 bauds");
+rep("[ ] Elle mesure une tension de 1000 mV");
+
+quest("ARD22 : À quoi sert l'instruction \"Serial.begin(9600);\" placée dans le setup ?//a");
+rep("[x] Elle initialise la communication série avec l'ordinateur à 9600 bauds");
+rep("[ ] Elle allume une LED connectée à la broche 9600");
+rep("[ ] Elle démarre la boucle loop()");
+rep("[ ] Elle règle la luminosité d'un écran");
+
+// ====================================================================================
+// SECTION : Arduino - Montage et breadboard
+// ====================================================================================
+theme("Arduino : Montage et breadboard");
+
+debut("Savoir utiliser correctement une plaque d'essai (breadboard) et réaliser un montage simple.");
+
+quest("ARD23 : À quoi sert une breadboard (plaque d'essai) ?//a");
+rep("[ ] À alimenter directement l'Arduino en 220V");
+rep("[x] À réaliser des montages électroniques sans soudure");
+rep("[ ] À programmer la carte Arduino");
+rep("[ ] À remplacer la carte Arduino");
+
+quest("ARD24 : Sur une breadboard, à quoi servent les deux rangées latérales marquées + et - ?//a");
+rep("[ ] À connecter uniquement les résistances");
+rep("[x] Ce sont les rails d'alimentation (masse et tension positive)");
+rep("[ ] Elles ne servent à rien, ce sont des repères visuels");
+rep("[ ] À mesurer la tension du circuit");
+
+quest("ARD25 : Sur la partie centrale d'une breadboard, comment sont reliés les trous d'une même colonne (5 trous) ?//a");
+rep("[x] Ils sont reliés électriquement entre eux");
+rep("[ ] Ils sont tous isolés les uns des autres");
+rep("[ ] Ils sont reliés uniquement à la masse");
+rep("[ ] Ils sont reliés à toute la ligne horizontale");
+
+quest("ARD26 : Pourquoi faut-il toujours placer une résistance en série avec une LED ?//a");
+rep("[ ] Pour augmenter la luminosité de la LED");
+rep("[x] Pour limiter le courant et éviter de détruire la LED");
+rep("[ ] Pour inverser la polarité de la LED");
+rep("[ ] Ce n'est pas nécessaire avec un Arduino");
+
+quest("ARD27 : Sur une LED, comment reconnaît-on généralement la patte positive (anode) ?//a");
+rep("[x] C'est la patte la plus longue");
+rep("[ ] C'est la patte la plus courte");
+rep("[ ] Elle est toujours de couleur rouge");
+rep("[ ] Les deux pattes sont identiques");
+
+quest("ARD28 : Dans un montage avec un bouton poussoir, à quoi sert une résistance de pull-down ?//a");
+rep("[ ] À protéger la LED du circuit");
+rep("[x] À garantir un état BAS stable sur la broche quand le bouton n'est pas appuyé");
+rep("[ ] À augmenter la vitesse du programme");
+rep("[ ] À alimenter le bouton en 5V en permanence");
+
+quest("ARD29 : Que risque-t-on si on relie directement le + et le - de l'alimentation sans composant entre les deux ?//a");
+rep("[x] Un court-circuit, pouvant endommager l'Arduino ou l'alimentation");
+rep("[ ] Rien de spécial");
+rep("[ ] La LED s'allume plus fort");
+rep("[ ] Le programme s'arrête automatiquement");
+
+quest("ARD30 : Quelle tension logique est fournie par les broches numériques d'un Arduino Uno lorsqu'elles sont à l'état HAUT ?//a");
+rep("[ ] 3.3 V");
+rep("[x] 5 V");
+rep("[ ] 9 V");
+rep("[ ] 12 V");
+
+quest("ARD31 : Reliez chaque grandeur à son unité ://2");
 rep("Tension : [Volt]");
 rep("Intensité : [Ampère]");
 rep("Résistance : [Ohm]");
 rep("Puissance : [Watt]");
-
-quest("electro01 : Quelle est l’unité de l’intensité du courant électrique ?://a");
-rep("[x] L’ampère (A)");
+ 
+quest("ARD32 : Quelle est l'unité de l'intensité du courant électrique ?//a");
+rep("[x] L'ampère (A)");
 rep("[ ] Le volt (V)");
 rep("[ ] Le watt (W)");
-rep("[ ] L’ohm (Ω)");
-
-quest("electro02 : Quelle est l’unité de la tension électrique ?://a");
-rep("[ ] L’ampère (A)");
+rep("[ ] L'ohm (Ω)");
+ 
+quest("ARD33 : Quelle est l'unité de la tension électrique ?//a");
+rep("[ ] L'ampère (A)");
 rep("[x] Le volt (V)");
 rep("[ ] Le watt (W)");
-rep("[ ] L’ohm (Ω)");
-
-quest("electro03 : Quelle est l’unité de la résistance électrique ?://a");
+rep("[ ] L'ohm (Ω)");
+ 
+quest("ARD34 : Quelle est l'unité de la résistance électrique ?//a");
 rep("[ ] Le volt (V)");
-rep("[ ] L’ampère (A)");
-rep("[x] L’ohm (Ω)");
+rep("[ ] L'ampère (A)");
+rep("[x] L'ohm (Ω)");
 rep("[ ] Le watt (W)");
-
-quest("electro04 : Que représente le courant électrique ?://a");
+ 
+quest("ARD35 : Que représente le courant électrique ?//a");
 rep("[ ] Une différence de potentiel");
-rep("[x] Un déplacement d’électrons");
+rep("[x] Un déplacement d'électrons");
 rep("[ ] Une résistance au passage du courant");
 rep("[ ] Une puissance");
-
-quest("electro05 : Que représente la tension électrique ?://a");
+ 
+quest("ARD36 : Que représente la tension électrique ?//a");
 rep("[x] Une différence de potentiel entre deux points");
-rep("[ ] Un flux d’électrons");
+rep("[ ] Un flux d'électrons");
 rep("[ ] Une puissance");
 rep("[ ] Une fréquence");
-
-quest("electro06 : Quelle est la loi d’Ohm ?://a");
+ 
+quest("ARD37 : Quelle est la loi d'Ohm ?//a");
 rep("[ ] U = R / I");
 rep("[ ] I = U × R");
 rep("[x] U = R × I");
 rep("[ ] R = U × I");
-
-quest("electro07 : Dans un circuit, si la résistance augmente, que se passe-t-il pour le courant (à tension constante) ?://a");
+ 
+quest("ARD38 : Dans un circuit, si la résistance augmente, que se passe-t-il pour le courant (à tension constante) ?//a");
 rep("[x] Il diminue");
 rep("[ ] Il augmente");
 rep("[ ] Il reste constant");
 rep("[ ] Il disparaît");
-
-quest("electro08 : Une pile fournit quel type de courant ?://a");
+ 
+quest("ARD39 : Une pile fournit quel type de courant ?//a");
 rep("[ ] Courant alternatif");
 rep("[x] Courant continu");
 rep("[ ] Courant variable");
 rep("[ ] Courant triphasé");
-
-quest("electro09 : Le courant alternatif (AC) signifie ://a");
+ 
+quest("ARD40 : Le courant alternatif (AC) signifie ://a");
 rep("[x] Le courant change de sens périodiquement");
 rep("[ ] Le courant est constant");
 rep("[ ] Le courant est nul");
 rep("[ ] Le courant est stocké");
-
-quest("electro10 : Le courant continu (DC) signifie ://a");
+ 
+quest("ARD41 : Le courant continu (DC) signifie ://a");
 rep("[ ] Le courant change de sens");
 rep("[x] Le courant circule toujours dans le même sens");
 rep("[ ] Le courant est variable");
 rep("[ ] Le courant est alternatif");
-
-quest("electro11 : Quel est le rôle d’une résistance dans un circuit ?://a");
+ 
+quest("ARD42 : Quel est le rôle d'une résistance dans un circuit ?//a");
 rep("[x] Limiter le courant");
 rep("[ ] Augmenter la tension");
 rep("[ ] Produire du courant");
-rep("[ ] Stocker l’énergie");
-
-quest("electro12 : Que se passe-t-il si on met des résistances en série ?://a");
-rep("[x] Les résistances s’additionnent");
+rep("[ ] Stocker l'énergie");
+ 
+quest("ARD43 : Que se passe-t-il si on met des résistances en série ?//a");
+rep("[x] Les résistances s'additionnent");
 rep("[ ] Elles diminuent");
-rep("[ ] Elles s’annulent");
+rep("[ ] Elles s'annulent");
 rep("[ ] Elles restent identiques");
-
-quest("electro13 : Que se passe-t-il si on met des résistances en parallèle ?://a");
-rep("[ ] Elles s’additionnent");
+ 
+quest("ARD44 : Que se passe-t-il si on met des résistances en parallèle ?//a");
+rep("[ ] Elles s'additionnent");
 rep("[x] La résistance équivalente diminue");
 rep("[ ] Elles augmentent");
 rep("[ ] Elles deviennent nulles");
-
-quest("electro14 : Une diode laisse passer le courant ://a");
+ 
+quest("ARD45 : Une diode laisse passer le courant ://a");
 rep("[ ] Dans les deux sens");
 rep("[x] Dans un seul sens");
 rep("[ ] Aucun sens");
 rep("[ ] Seulement en alternatif");
-
-quest("electro15 : Quel est le rôle d’une LED ?://a");
-rep("[ ] Stocker de l’énergie");
+ 
+quest("ARD46 : Quel est le rôle d'une LED ?//a");
+rep("[ ] Stocker de l'énergie");
 rep("[ ] Amplifier un signal");
 rep("[x] Émettre de la lumière");
 rep("[ ] Résister au courant");
-
-quest("electro16 : Pourquoi utilise-t-on une résistance avec une LED ?://a");
+ 
+quest("ARD47 : Pourquoi utilise-t-on une résistance avec une LED ?//a");
 rep("[x] Pour limiter le courant et éviter de la griller");
 rep("[ ] Pour augmenter la luminosité");
 rep("[ ] Pour changer la couleur");
-rep("[ ] Pour stocker l’énergie");
-
-quest("electro17 : Une LED RGB permet ://a");
-rep("[ ] D’émettre une seule couleur");
+rep("[ ] Pour stocker l'énergie");
+ 
+quest("ARD48 : Une LED RGB permet ://a");
+rep("[ ] D'émettre une seule couleur");
 rep("[x] De produire plusieurs couleurs");
 rep("[ ] De mesurer la tension");
 rep("[ ] De stocker des données");
-
-quest("electro19 : Dans une LED RGB, que signifie RGB ?://a");
+ 
+quest("ARD49 : Dans une LED RGB, que signifie RGB ?//a");
 rep("[ ] Rouge Gris Bleu");
 rep("[x] Rouge Vert Bleu");
 rep("[ ] Résistance Générale Basse");
 rep("[ ] Rotation Génératrice Binaire");
-
-quest("electro20 : Dans un circuit série, le courant est ://a");
+ 
+quest("ARD50 : Dans un circuit série, le courant est ://a");
 rep("[x] Identique partout");
 rep("[ ] Différent à chaque endroit");
 rep("[ ] Nul");
 rep("[ ] Variable uniquement");
-
-quest("electro21 : Dans un circuit parallèle, la tension est ://a");
+ 
+quest("ARD51 : Dans un circuit parallèle, la tension est ://a");
 rep("[x] Identique sur chaque branche");
 rep("[ ] Différente partout");
 rep("[ ] Nulle");
 rep("[ ] Variable uniquement");
-
-quest("electro22 : Que se passe-t-il si une LED est branchée à l’envers ?://a");
-rep("[ ] Elle s’allume plus fort");
+ 
+quest("ARD52 : Que se passe-t-il si une LED est branchée à l'envers ?//a");
+rep("[ ] Elle s'allume plus fort");
 rep("[ ] Elle explose");
-rep("[x] Elle ne s’allume pas");
+rep("[x] Elle ne s'allume pas");
 rep("[ ] Elle change de couleur");
-
-quest("electro23 : Une pile transforme ://a");
+ 
+quest("ARD53 : Une pile transforme ://a");
 rep("[ ] Énergie mécanique en électrique");
 rep("[x] Énergie chimique en électrique");
 rep("[ ] Énergie électrique en thermique");
 rep("[ ] Énergie lumineuse en électrique");
-
-quest("electro24 : Quelle est l’unité de la tension électrique ?");
-rep("[ ] l’ampère");
+ 
+quest("ARD54 : Quelle est l'unité de la tension électrique ?//a");
+rep("[ ] l'ampère");
 rep("[x] le volt");
-rep("[ ] l’ohm");
-
-quest("electro25 : Quelle est l’unité de l’intensité du courant ?");
-rep("[x] l’ampère");
+rep("[ ] l'ohm");
+ 
+quest("ARD55 : Quelle est l'unité de l'intensité du courant ?//a");
+rep("[x] l'ampère");
 rep("[ ] le watt");
 rep("[ ] le volt");
-
-quest("electro26 : À quoi sert un fusible dans un circuit ?");
+ 
+quest("ARD56 : À quoi sert un fusible dans un circuit ?//a");
 rep("[x] à protéger contre les surintensités");
 rep("[ ] à augmenter la tension");
-rep("[ ] à stocker l’énergie");
-
-quest("electro27 : Quelle est la formule de base de la loi d’Ohm ?");
+rep("[ ] à stocker l'énergie");
+ 
+quest("ARD57 : Quelle est la formule de base de la loi d'Ohm ?//a");
 rep("[ ] U = I + R");
 rep("[x] U = R × I");
 rep("[ ] P = U × I");
-
-quest("electro28 : Que se passe-t-il si on met deux piles en série ?");
+ 
+quest("ARD58 : Que se passe-t-il si on met deux piles en série ?//a");
 rep("[x] la tension augmente");
 rep("[ ] le courant diminue toujours");
 rep("[ ] la tension reste la même");
-
-quest("electro29 : Quelle est l’unité de la puissance électrique ?");
+ 
+quest("ARD59 : Quelle est l'unité de la puissance électrique ?//a");
 rep("[ ] le volt");
-rep("[ ] l’ampère");
+rep("[ ] l'ampère");
 rep("[x] le watt");
-
-quest("electro30 : Un court-circuit correspond à :");
+ 
+quest("ARD60 : Un court-circuit correspond à ://a");
 rep("[x] une résistance très faible dans le circuit");
 rep("[ ] une coupure du circuit");
 rep("[ ] une tension nulle");
-
-quest("electro31 : À quoi sert la terre dans une installation électrique ?");
+ 
+quest("ARD61 : À quoi sert la terre dans une installation électrique ?//a");
 rep("[x] à protéger les personnes");
 rep("[ ] à augmenter la puissance");
-rep("[ ] à stocker l’énergie");
-
-quest("electro32 : Que mesure un voltmètre ?");
+rep("[ ] à stocker l'énergie");
+ 
+quest("ARD62 : Que mesure un voltmètre ?//a");
 rep("[ ] le courant");
 rep("[x] la tension");
 rep("[ ] la résistance");
-
-quest("electronique33 - En électronique, une diode permet :");
+ 
+quest("ARD63 : En électronique, une diode permet ://a");
 rep("[x] de laisser passer le courant dans un seul sens");
-rep("[ ] d’augmenter la tension");
-rep("[ ] de stocker l’énergie");
+rep("[ ] d'augmenter la tension");
+rep("[ ] de stocker l'énergie");
 
 // ====================================================================================
 // SECTION : Bac2 : Protections des personnes
