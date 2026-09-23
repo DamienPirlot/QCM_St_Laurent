@@ -3730,7 +3730,7 @@ rep("[ ] est d'une fois tous les 3 mois, quelle que soit la masse nominale d'age
 quest("AgrFroid114 : Quelles sont les conditions minimales que doit remplir une entreprise en technique du froid pour pouvoir être agréée ?://a");
 rep("[ ] Le chef de cette entreprise doit disposer du certificat requis");
 rep("[ ] Les travailleurs occupés par cette entreprise sont exclusivement des techniciens frigoristes disposant du certificat requis");
-rep("[x] Elle doit employer du personnel titulaire d'un certificat pour les activités pertinentes, en nombre suffisant pour faire face au volume d'activité escompté, et apporter la preuve que le personnel dispose de l'outillage et des procédures nécessaires."");
+rep("[x] Elle doit employer du personnel titulaire d'un certificat pour les activités pertinentes, en nombre suffisant pour faire face au volume d'activité escompté, et apporter la preuve que le personnel dispose de l'outillage et des procédures nécessaires.");
 rep("[ ] Son équipement doit correspondre au minimum à celui visé dans la règlementation régionale et son dirigeant doit disposer de l'accès à la profession de frigoriste");
 
 quest("AgrFroid115 : Le test de pression est réalisé par://a");
