@@ -2070,14 +2070,6 @@ juste("Exact : 60V / 1000 tr/mn = 0,06 V/tr/mn.");
 faux("Il faut diviser la tension par la vitesse : 60 / 1000.");
 
 // ====================================================================================
-// SECTION : Lien vers un site internet
-// ====================================================================================
-theme("St laurent : QCM appareillage (1 Question : Lien vers un QCM extérieur");
-
-quest("APP00 : Lancer le QCM electrotoile en ligne//a");
-fenetre_info("MODE D'EMPLOI","https://electrotoile.eu/qcm/qcm_appareillage/");
-
-// ====================================================================================
 // SECTION : L'électronique
 // ====================================================================================
 
