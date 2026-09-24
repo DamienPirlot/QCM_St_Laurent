@@ -4547,13 +4547,7 @@ rep("[ ] Rien, ces réfrigérants sont ininflammables");
 rep("[x] Il se produit un dégagement de substances toxiques provenant de la décomposition du fluide");
 rep("[ ] Il se forme des produits de décomposition, mais ceux-ci ne sont pas toxiques");
 
-quest("AgrFroid250 : Combien de fois faut-il changer l'huile d'un compresseur qui a "grillé" (burn-out) ?://a");
-rep("[ ] Deux fois maximum : une fois après le burn-out et une fois avant la pose du filtre définitif");
-rep("[x] Autant de fois que nécessaire pour éliminer toutes traces d'acides contenues dans l'huile");
-rep("[ ] Une fois après le burn-out et une fois lors du démontage du filtre de burn-out");
-rep("[ ] Il ne faut jamais changer l'huile des compresseurs");
-
-quest("AgrFroid250 : Combien de fois faut-il changer l'huile d'un compresseur qui a "grillé" (burn-out) ?://a");
+quest("AgrFroid250 : Combien de fois faut-il changer l'huile d'un compresseur qui a grillé (burn-out) ?://a");
 rep("[ ] Deux fois maximum : une fois après le burn-out et une fois avant la pose du filtre définitif");
 rep("[x] Autant de fois que nécessaire pour éliminer toutes traces d'acides contenues dans l'huile");
 rep("[ ] Une fois après le burn-out et une fois lors du démontage du filtre de burn-out");
@@ -4949,7 +4943,7 @@ rep("[ ] Oui, bien entendu, ces raccords sont étanches et de bonne qualité. De
 rep("[ ] Les raccords de ce genre ne sont acceptables que dans la mesure où ils sont réalisés sous flux d'azote");
 rep("[x] Non, car cette technique ne permet pas de réaliser un raccord capillaire séparé par fusion ; c'est pourquoi elle est déconseillée et il est préférable d'employer des manchons spéciaux");
 
-quest("AgrFroid315 : Est-il indiqué de réutiliser le réfrigérant provenant d'un moteur de compresseur hermétique "grillé" ?://a");
+quest("AgrFroid315 : Est-il indiqué de réutiliser le réfrigérant provenant d'un moteur de compresseur hermétique grillé ?://a");
 rep("[ ] Oui, car cela n'a pas d'influence sur le fonctionnement");
 rep("[ ] Oui, moyennant le remplacement des filtres-déshydrateurs de l'installation");
 rep("[ ] Oui, si l'on ajoute suffisamment de réfrigérant neuf");
@@ -5724,7 +5718,7 @@ rep("[ ] Le détendeur à PMA (MOP)");
 rep("[ ] Le régulateur de démarrage et/ou détendeur à PMA (MOP)");
 
 quest("AgrFroid443 : Qu'emploie-t-on pour éliminer les résidus acides d'un système ?://a");
-rep("[x] Un filtre "burn-out"");
+rep("[x] Un filtre burn-out");
 rep("[ ] Un filtre à gaz aspirés");
 rep("[ ] Un filtre à liquide");
 rep("[ ] Un filtre à huile");
