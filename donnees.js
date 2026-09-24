@@ -35,7 +35,7 @@ chronometre("60","Le temps est écoulé !");
 // ====================================================================================
 // SECTION : La loi d'Ohm
 // ====================================================================================
-theme(" 4eme : La Loi d'Ohm");
+theme("4eme : La Loi d'Ohm");
 
 debut("Questions sur la relation entre Tension, Courant et Résistance.");
 
@@ -559,10 +559,10 @@ rep("[ ] d'augmenter la tension");
 rep("[ ] de stocker l'énergie");
 
 // ====================================================================================
-// SECTION : Bac2 : Protections des personnes
+// SECTION :  Protections des personnes
 // ====================================================================================
 
-theme("Bac 2 : Les protections des personnes");
+theme("Les protections des personnes");
 
 quest("Protection01 : À partir de quelle intensité un courant peut-il devenir dangereux pour l’homme ?://a");
 rep("[x] Environ 30 mA");
@@ -785,8 +785,7 @@ rep("[ ] Lors d’un courant de fuite vers la terre");
 // SECTION : Le cournant Alternatif
 // ====================================================================================
 
-theme("Bac 2 : Courant Alternatif (AC)");
-
+theme("Courant Alternatif (AC)");
 debut("Le courant du secteur (maison).");
 
 quest("Quel est le symbole du courant alternatif ?//a");
@@ -809,7 +808,7 @@ rep("[x] Une sinusoïde");
 // SECTION : Electricité et rôles des appareillages
 // ====================================================================================
 
-theme("Bac 2 : Les différents appareils électriques");
+theme("Les différents appareils électriques");
 
 quest("APP01 : Pour changer le sens de rotation d'un moteur triphasé ://a");
 rep("[ ] l'équiper d'un condensateur");
@@ -1242,8 +1241,7 @@ aj("images/APP82.png");
 // SECTION : Les moteurs triphasés
 // ====================================================================================
 
-theme("Bac 2 : Les Moteurs Triphasés");
-
+theme("Les Moteurs Triphasés");
 debut("Questions sur le fonctionnement et le câblage des moteurs triphasés.");
 
 quest("Quelle est la fonction principale du stator dans un moteur asynchrone ?");
@@ -1301,8 +1299,7 @@ rep("[ ] Il tournera plus vite");
 // SECTION : Synchrone vs Asynchrone
 // ====================================================================================
 
-theme("Bac 2 : Synchrone vs Asynchrone");
-
+theme("Synchrone vs Asynchrone");
 debut("Différences fondamentales entre les technologies synchrones et asynchrones.");
 
 quest("Quelle est la caractéristique principale du rotor d'un moteur synchrone ?");
@@ -1359,7 +1356,7 @@ rep("[x] Non, c'est impossible par construction");
 // SECTION : Les moteurs CC et universel
 // ====================================================================================
 
-theme("Bac 2 : Moteurs CC et Universel");
+theme("Moteurs CC et Universel");
 debut("Moteurs à courant continu, universels et technologies sans balais.");
 
 quest("CC1 - Quel composant permet d'inverser le sens du courant dans un moteur à courant continu ?//a");
@@ -1540,7 +1537,7 @@ rep("[x] Elle est proportionnelle à la tension d'alimentation");
 // ====================================================================================
 // SECTION : Le cournat triphasé
 // ====================================================================================
-theme("Bac 2 : La courant triphasé");
+theme("La courant triphasé");
 
 quest("TRI01 : Dans un système triphasé, combien de phases différentes sont utilisées ?//a");
 rep("[x] 3 phases");
@@ -1685,7 +1682,7 @@ aj("images/TRI1.png");
 // ====================================================================================
 // SECTION : La pneumatique
 // ====================================================================================
-theme("Bac 3 : La pneumatique");
+theme("La pneumatique");
 
 quest("PNEU1 : Ce vérin est ://a");
 rep("[x] simple effet");
@@ -1826,11 +1823,10 @@ rep("[ ] Que l'air passe mais le courant ne passe pas ");
 rep("[ ] Que l'air ne passe pas mais le courant passe ");
 
 
-
 // ====================================================================================
 // SECTION : Les capteurs
 // ====================================================================================
-theme("Bac 3 : Les capteurs");
+theme("Les capteurs");
 
 quest("CAPT1 : Ce codeur incrémental (500 points/tour) tourne à 600 tr/min. Quelle est la fréquence des impulsions de sortie ?//a");
 rep("[ ] 300 kHz");
