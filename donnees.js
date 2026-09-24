@@ -3023,6 +3023,8 @@ rep("[x] 8");
 
 theme("St Laurent : Dépannage Technique du froid");
 debut("Les différentes pannes classique dans un système frigorifique");
+
+
 quest("Comment évolue la HP dans la panne d'un détendeur trop petit ?");
 rep("[ ] Diminue");
 rep("[ ] Reste égale");
@@ -3033,7 +3035,8 @@ aj("images/détendeur.png");
 // SECTION : L'agrégation du froid
 // ====================================================================================
 
-theme("St Laurent : L'agrégation du froid");
+theme("St Laurent : L'agrégation du froid - Part1");
+debut("Préparation à l'examen sur l'agrégation frigorifique");
 
 quest("AgrFroid001 : Quels frigorigènes attaquent la couche d'ozone ?://a");
 rep("[x] Les (H)CFC");
@@ -3628,6 +3631,9 @@ rep("[ ] 1 mois");
 rep("[ ] 3 mois");
 rep("[ ] 6 mois");
 rep("[x] 12 mois");
+
+theme("St Laurent : L'agrégation du froid - Part2");
+debut("Préparation à l'examen sur l'agrégation frigorifique");
 
 quest("AgrFroid100 : Quelles sont les fréquences du contrôle d'étanchéité d'une installation contenant 800 tonnes équivalent CO2 de HFC, tenant compte du fait qu'un système de détection de fuites a dû être installé?://a");
 rep("[ ] 1 mois");
@@ -4247,6 +4253,9 @@ rep("[ ] peut être remplie jusqu'à 90% de sa capacité");
 rep("[x] doit être accompagnée de son document de suivi des déchets");
 rep("[ ] peut être stockée et transportée sur le territoire belge sans aucune formalité spécifique");
 
+theme("St Laurent : L'agrégation du froid - Part3");
+debut("Préparation à l'examen sur l'agrégation frigorifique");
+
 quest("AgrFroid200 : Chaque bouteille de récupération de fluide frigorigène :://a");
 rep("[ ] doit obligatoirement être stockée dans un frigo");
 rep("[ ] peut être remplie jusqu'à 90% de sa capacité");
@@ -4853,6 +4862,9 @@ rep("[ ] du R507");
 rep("[x] du R407C");
 rep("[ ] de tous les agents réfrigérants");
 
+theme("St Laurent : L'agrégation du froid - Part4");
+debut("Préparation à l'examen sur l'agrégation frigorifique");
+
 quest("AgrFroid300 : Le remplissage en phase liquide est requis dans le cas :://a");
 rep("[ ] du R134a");
 rep("[ ] du R507");
@@ -5458,6 +5470,10 @@ rep("[ ] Plus de réfrigérant que dans un détendeur normal");
 rep("[x] Moins de réfrigérant que dans un détendeur normal");
 rep("[ ] Pas de réfrigérant");
 rep("[ ] Un type spécial d'antigel");
+
+theme("St Laurent : L'agrégation du froid - Part5");
+debut("Préparation à l'examen sur l'agrégation frigorifique");
+
 
 quest("AgrFroid400 : Qu'y a-t-il dans le capteur d'un détendeur à PMA (MOP) ?://a");
 rep("[ ] Plus de réfrigérant que dans un détendeur normal");
