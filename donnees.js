@@ -539,7 +539,6 @@ rep("[ ] de stocker l'énergie");
 // ====================================================================================
 
 theme("L'électrotechnique");
-theme("L'électrotechnique");
 
 quest("Elec001 : Que signifie le sigle LED ?://a");
 rep("[ ] Light Electric Device");
