@@ -539,34 +539,35 @@ rep("[ ] de stocker l'énergie");
 // ====================================================================================
 
 theme("L'électrotechnique");
+theme("L'électrotechnique");
 
 quest("Elec001 : Que signifie le sigle LED ?://a");
 rep("[ ] Light Electric Device");
 rep("[x] Light Emitting Diode (diode électroluminescente)");
 rep("[ ] Low Energy Diode");
 rep("[ ] Light Electronic Detector");
-explication("LED signifie \"Light Emitting Diode\", c'est-à-dire diode électroluminescente : un composant qui produit de la lumière lorsqu'un courant électrique le traverse dans le bon sens.");
+explication("La bonne réponse est Light Emitting Diode, c'est-à-dire diode électroluminescente : un composant qui produit de la lumière lorsqu'un courant électrique le traverse dans le bon sens.");
 
 quest("Elec002 : Dans quel sens le courant doit-il circuler pour qu'une LED s'allume ?://a");
 rep("[ ] Dans les deux sens, cela ne change rien");
 rep("[x] Uniquement de l'anode vers la cathode");
 rep("[ ] Uniquement de la cathode vers l'anode");
 rep("[ ] Le sens dépend de la couleur de la LED");
-explication("Une LED est une diode : elle ne laisse passer le courant que dans un seul sens, de l'anode (+) vers la cathode (-). Si on l'inverse, elle ne s'allume pas.");
+explication("La bonne réponse est de l'anode vers la cathode. Une LED est une diode : elle ne laisse passer le courant que dans ce sens, de l'anode (+) vers la cathode (-). Si on l'inverse, elle ne s'allume pas.");
 
 quest("Elec003 : Comment reconnaît-on la patte de l'anode (+) sur une LED neuve ?://a");
 rep("[x] C'est la patte la plus longue");
 rep("[ ] C'est la patte la plus courte");
 rep("[ ] C'est toujours la patte de gauche");
 rep("[ ] Il n'y a aucun moyen de le savoir");
-explication("Sur une LED neuve, la patte la plus longue est l'anode (+) et la patte la plus courte est la cathode (-). Si les pattes ont été coupées, on peut repérer la cathode grâce au méplat sur le boîtier.");
+explication("La bonne réponse est la patte la plus longue. Sur une LED neuve, la patte la plus longue est l'anode (+) et la patte la plus courte est la cathode (-).");
 
 quest("Elec004 : Comment reconnaît-on la cathode (-) si les pattes de la LED ont été coupées ?://a");
 rep("[ ] Elle est toujours de couleur rouge");
 rep("[x] Elle correspond au côté du boîtier qui présente un méplat (un côté aplati)");
 rep("[ ] Elle est plus grosse que l'anode");
 rep("[ ] On ne peut plus le savoir");
-explication("Même sans les pattes, on repère la cathode grâce au méplat : un petit côté plat sur le bord du boîtier rond de la LED, du côté de la cathode.");
+explication("La bonne réponse est le méplat. Même sans les pattes, on repère la cathode grâce à ce petit côté plat sur le bord du boîtier rond de la LED, du côté de la cathode.");
 
 quest("Elec005 : Qu'est-ce qu'un matériau conducteur ?://a");
 rep("[x] Un matériau qui laisse bien passer le courant électrique (ex : cuivre, aluminium)");
@@ -594,7 +595,7 @@ rep("[x] Un espace en mémoire qui stocke une valeur pouvant changer pendant le 
 rep("[ ] Un composant électronique branché sur la carte");
 rep("[ ] Une valeur qui ne change jamais");
 rep("[ ] Un type de résistance");
-explication("Une variable est comme une \"boîte\" en mémoire à laquelle on donne un nom (ex : luminosite) et qui contient une valeur (nombre, texte...) pouvant être modifiée au cours du programme.");
+explication("Une variable est comme une boîte en mémoire à laquelle on donne un nom (ex : luminosite) et qui contient une valeur (nombre, texte...) pouvant être modifiée au cours du programme.");
 
 quest("Elec009 : À quoi sert une breadboard (plaque d'essai) ?://a");
 rep("[x] À réaliser des montages électroniques sans soudure, pour tester facilement un circuit");
@@ -615,35 +616,35 @@ rep("[ ] Elle s'exécute une seule fois puis s'arrête");
 rep("[x] Elle s'exécute en boucle, indéfiniment, tant que la carte est allumée");
 rep("[ ] Elle sert à déclarer les variables");
 rep("[ ] Elle éteint la carte Arduino");
-explication("void loop() contient les instructions qui se répètent sans arrêt (en boucle) tant que la carte Arduino est sous tension : c'est le cœur du programme qui tourne en continu.");
+explication("void loop() contient les instructions qui se répètent en boucle tant que la carte Arduino est sous tension : c'est le cœur du programme qui tourne en continu.");
 
 quest("Elec012 : Que représente l'état HIGH sur une broche Arduino ?://a");
-rep("[x] Un niveau de tension \"haut\" (généralement 5V), correspondant à l'état logique 1");
+rep("[x] Un niveau de tension haut (généralement 5V), correspondant à l'état logique 1");
 rep("[ ] L'absence totale de courant");
 rep("[ ] Une tension négative");
 rep("[ ] Une valeur analogique précise entre 0 et 1023");
-explication("HIGH correspond à un niveau de tension \"haut\" (souvent 5V sur Arduino Uno), interprété comme l'état logique 1 (vrai / allumé).");
+explication("HIGH correspond à un niveau de tension haut (souvent 5V sur Arduino Uno), interprété comme l'état logique 1, c'est-à-dire vrai ou allumé.");
 
 quest("Elec013 : Que représente l'état LOW sur une broche Arduino ?://a");
-rep("[x] Un niveau de tension \"bas\" (0V), correspondant à l'état logique 0");
+rep("[x] Un niveau de tension bas (0V), correspondant à l'état logique 0");
 rep("[ ] Une tension de 5V");
 rep("[ ] Une valeur analogique maximale");
 rep("[ ] Un court-circuit");
-explication("LOW correspond à un niveau de tension \"bas\" (0V), interprété comme l'état logique 0 (faux / éteint), à l'opposé de HIGH.");
+explication("LOW correspond à un niveau de tension bas (0V), interprété comme l'état logique 0, c'est-à-dire faux ou éteint, à l'opposé de HIGH.");
 
 quest("Elec014 : Qu'est-ce qu'un signal numérique (digital) ?://a");
 rep("[x] Un signal qui ne peut prendre que deux valeurs possibles : HIGH (1) ou LOW (0)");
 rep("[ ] Un signal qui peut prendre n'importe quelle valeur entre 0 et 5V");
 rep("[ ] Un signal uniquement utilisé pour la lumière");
 rep("[ ] Un signal qui varie de façon continue");
-explication("Un signal numérique (digital) est un signal \"tout ou rien\" : il ne peut prendre que deux états, HIGH ou LOW (1 ou 0). On l'utilise avec digitalRead() et digitalWrite().");
+explication("Un signal numérique (digital) est un signal tout ou rien : il ne peut prendre que deux états, HIGH ou LOW (1 ou 0). On l'utilise avec digitalRead() et digitalWrite().");
 
 quest("Elec015 : Qu'est-ce qu'un signal analogique ?://a");
 rep("[ ] Un signal qui ne peut prendre que les valeurs 0 ou 1");
 rep("[x] Un signal qui peut prendre de nombreuses valeurs intermédiaires (par exemple de 0 à 1023 avec analogRead)");
 rep("[ ] Un signal qui n'existe pas sur Arduino");
 rep("[ ] Un signal uniquement présent dans void setup()");
-explication("Un signal analogique varie de façon continue et peut prendre beaucoup de valeurs différentes (par exemple entre 0 et 1023 lorsqu'on lit une broche analogique avec analogRead() sur Arduino).");
+explication("Un signal analogique varie de façon continue et peut prendre beaucoup de valeurs différentes, par exemple entre 0 et 1023 lorsqu'on lit une broche analogique avec analogRead() sur Arduino.");
 
 quest("Elec016 : Que dit la loi d'Ohm ?://a");
 rep("[x] La tension U est égale à la résistance R multipliée par l'intensité I : U = R × I");
@@ -657,7 +658,7 @@ rep("[x] L'intensité du courant qui circule dans un circuit, à partir de la te
 rep("[ ] La couleur exacte d'une LED");
 rep("[ ] La quantité de lumière émise par une LED");
 rep("[ ] Le nombre de composants d'un circuit");
-explication("La loi de Pouillet (appliquée à un circuit série simple) permet de calculer l'intensité du courant I à partir de la tension totale U et de la résistance totale R du circuit : I = U / R. C'est très utile pour dimensionner la résistance à placer devant une LED.");
+explication("La loi de Pouillet, appliquée à un circuit série simple, permet de calculer l'intensité du courant I à partir de la tension totale U et de la résistance totale R du circuit : I = U / R. C'est très utile pour dimensionner la résistance à placer devant une LED.");
 
 quest("Elec018 : À quoi sert une résistance placée devant une LED dans un circuit ?://a");
 rep("[x] À limiter l'intensité du courant pour ne pas endommager ou griller la LED");
@@ -671,14 +672,15 @@ rep("[x] À définir si une broche de la carte fonctionne en entrée (INPUT) ou 
 rep("[ ] À allumer directement une LED");
 rep("[ ] À créer une nouvelle variable");
 rep("[ ] À mesurer une tension électrique");
-explication("pinMode(broche, mode) permet d'indiquer au programme si une broche sera utilisée pour envoyer un signal (OUTPUT, ex : allumer une LED) ou pour recevoir un signal (INPUT, ex : lire un bouton). Elle s'utilise généralement dans void setup().");
+explication("pinMode(broche, mode) permet d'indiquer au programme si une broche sera utilisée pour envoyer un signal, en sortie, par exemple pour allumer une LED, ou pour recevoir un signal, en entrée, par exemple pour lire un bouton. Elle s'utilise généralement dans void setup().");
 
 quest("Elec020 : Quels sont les signes d'une soudure correctement réalisée ?://a");
 rep("[x] Elle est brillante, lisse, en forme de petit cône, sans excès d'étain ni faux contact");
 rep("[ ] Elle est terne, granuleuse et forme une grosse boule d'étain");
 rep("[ ] Elle est froide et grise, sans tenir les composants");
 rep("[ ] Il y a beaucoup d'étain qui déborde sur les pattes voisines");
-explication("Une bonne soudure est brillante, lisse, bien formée en cône régulier autour de la patte du composant, sans excès de métal, sans trou et sans relier deux pattes voisines entre elles (pas de pont de soudure).");
+explication("Une bonne soudure est brillante, lisse, bien formée en cône régulier autour de la patte du composant, sans excès de métal, sans trou et sans relier deux pattes voisines entre elles, c'est-à-dire sans pont de soudure.");
+
 
 
 // ====================================================================================
