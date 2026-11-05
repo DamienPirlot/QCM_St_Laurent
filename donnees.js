@@ -3065,9 +3065,9 @@ faux("Le point de congelation de l'eau, 0 degre Celsius, correspond a 32 degres 
 quest("Q023. - La température de 0 °F est proche de :");
 rep("[ ] 37 °C");
 rep("[ ] 0 °C");
-rep("[ ] -18 °C");
-rep("[x] -40 °C");
-faux("Zero degre Fahrenheit correspond approximativement a moins 18 degres Celsius, mais la bonne reponse ici est la valeur fournie par la conversion precise, soit moins 40 degres C pour la valeur eloignee du barème d'origine");
+rep("[x] -18 °C");
+rep("[ ] -40 °C");
+faux("Zero degre Fahrenheit correspond approximativement a moins 18 degres Celsius");
 
 quest("Q024. - Identifier la ou les bonnes notations pour le kilowattheure :");
 rep("[ ] Kwh");
